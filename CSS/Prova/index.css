@@ -1,0 +1,46 @@
+h2{
+   color: rgb(102, 100, 100); 
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 50px;
+   font-weight: 200;
+   text-decoration: underline;
+   }
+
+img.mi{
+   float: left;
+   width: 50%;
+}
+
+ #animation{
+   animation: anime 5s;
+   background: rgb(218, 218, 248);
+   left: 15%;
+   width: 400px;
+   height: 600px;
+   padding: 20px;
+   float: left;
+ }  
+
+@keyframes anime {
+   from{
+      background: purple;
+   }
+   to{
+      background: green;
+   }
+}
+aside{
+   float: right;
+   width:200px;
+   height:200px;
+   background:red;
+  box-shadow:  0 0 15px rgba(0,0,0,0.5),         /* esterna */
+      inset 5px 5px 10px rgba(255,255,255,0.6); /* interna */
+}
+aside:hover{
+   background-color: aqua;
+   width: 300px;
+   height: 300px;
+
+}
+
