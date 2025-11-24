@@ -1,6 +1,6 @@
 // VARIABILI
 
-/*
+
 let color = 'red'
 let id = 10.05
 let log = true

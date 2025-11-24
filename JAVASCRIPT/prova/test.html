@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+     <script src="test.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="create"></h1>
+    <p id ="click" onclick="myClick()">Clicca qui per sapere se hai vito!</p>
+     <h3 id="mouseOn" onmouseover="sopra()" onmouseout="fuori()">Di che colore sono?</h3>
+    <h2 id="tempoScaduto" style="color: red;"></h2>
+    <h3 id="inter"></h3>
+    <h4 id="json-example-parse"></h4>
+    <h5 id="json-example-objet"></h5>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    let exampleJsonP= `{"nome":"Zoe","eta":"18","citta":"Treviso"}`;
+    let jsonParse = JSON.parse(exampleJsonP)
+    console.log(jsonParse)
+
+    document.getElementById("json-example-parse").innerHTML=jsonParse.nome;
+
+    let exampleJsonO= {nome:"gabriela",eta:32,citta:"Monastier"}
+    let jsonObje = JSON.stringify(exampleJsonO)
+    console.log(jsonObje)
+
+    document.getElementById("json-example-objet").innerHTML=jsonObje;
+
+   let listaClienti = [
+
+      {nome: "Mariana", eta: 30, citta: "Padova"},
+      {nome: "Paola", eta: 45, citta: "Torino"},
+      {nome: "Patrizia", eta: 22, citta: "Milano"}
+
+      ];
+
+      let listaClientiJson = JSON.stringify(listaClienti);
+      console.log("Array di clienti trasformati in JSON: ", listaClientiJson)
+
+    let element = document.createElement("h1")
+    let create=document.createTextNode("Benvenuti programmatori")
+    element.appendChild(create)
+    let node = document.getElementById("create")
+    node.appendChild(element)
+   
+    function myClick (){
+        document.getElementById("click").innerHTML ="Non questa volta  (╥﹏╥)"
+        }
+
+     function sopra() {
+        document.getElementById("mouseOn").style.color = "yellow";
+      }
+    function fuori() {
+        document.getElementById("mouseOn").style.color = "black";
+      }
+     
+      setTimeout(timeout,4000);
+      function timeout(){
+        document.getElementById("tempoScaduto").innerHTML = "La sessione è scaduta"
+      }
+      setInterval(intervallo,3000);
+      function intervallo(){
+        let data= new Date
+        document.getElementById("inter").innerHTML = 
+        data.getHours() + ":" + data.getMinutes() + ":" + data.getSeconds();
+        
+      }
+/*
+      let nome = "gabriela"
+      let cognome ="salatino"
+      let nomeCom = `${nome}    ${cognome}`;
+      console.log(nomeCom)
+*/
+
+</script>
+   
+    
+</body>
+</html>

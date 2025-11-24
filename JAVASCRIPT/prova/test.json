@@ -1,0 +1,44 @@
+[{
+ "cod_prodotto":1,
+ "brand":"Nike",
+ "prodoct":"scarpe",
+ "color":"black",
+ "price":"200.00 euro"
+},
+{
+ "cod_prodotto":2,
+ "brand":"Adidas",
+ "prodoct":"scarpe",
+ "color":"blue",
+ "price":"150.00 euro"
+},
+{
+ "cod_prodotto":3,
+ "brand":"Puma",
+ "prodoct":"scarpe",
+ "color":"red",
+ "price":"120.00 euro"
+},
+{
+ "cod_prodotto":4,
+ "brand":"Nike",
+ "prodoct":"scarpe",
+ "color":"brown",
+ "price":"160.00 euro"
+},
+{
+ "cod_prodotto":5,
+ "brand":"New Balance",
+ "prodoct":"scarpe",
+ "color":"violet",
+ "price":"130.00 euro"
+},
+{
+ "cod_prodotto":6,
+ "brand":"Adidas",
+ "prodoct":"scarpe",
+ "color":"white",
+ "price":"150.00 euro"
+}
+
+]
