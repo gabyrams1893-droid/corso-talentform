@@ -1,5 +1,5 @@
 enum Color {
-  Red = 4,
+  Red = 1,
   Green,
   Blue,
   Pink,
@@ -10,10 +10,10 @@ let color: Color = Color.Green;
 console.log(color);
 
 enum Direction {
-  Up = "UP",
-  Down = "DOWN",
-  Left = "LEFT",
-  Right = "RIGHT",
+  Up = "Su",
+  Down = "Giù",
+  Left = "Sinistra",
+  Right = "Destra",
 }
 
 enum HeterogeneousEnum {
@@ -26,3 +26,12 @@ let heterogeneous: HeterogeneousEnum = HeterogeneousEnum.Yes;
 
 console.log(enumeration);
 console.log(heterogeneous);
+
+enum prodotto{
+  prezzo = 1,
+  modello,
+  id ,
+  brand
+
+}
+ console.log(prodotto.modello)

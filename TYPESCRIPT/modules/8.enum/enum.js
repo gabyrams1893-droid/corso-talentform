@@ -1,19 +1,19 @@
 var Color;
 (function (Color) {
-    Color[Color["Red"] = 4] = "Red";
-    Color[Color["Green"] = 5] = "Green";
-    Color[Color["Blue"] = 6] = "Blue";
-    Color[Color["Pink"] = 7] = "Pink";
-    Color[Color["White"] = 8] = "White";
+    Color[Color["Red"] = 1] = "Red";
+    Color[Color["Green"] = 2] = "Green";
+    Color[Color["Blue"] = 3] = "Blue";
+    Color[Color["Pink"] = 4] = "Pink";
+    Color[Color["White"] = 5] = "White";
 })(Color || (Color = {}));
 let color = Color.Green;
 console.log(color);
 var Direction;
 (function (Direction) {
-    Direction["Up"] = "UP";
-    Direction["Down"] = "DOWN";
-    Direction["Left"] = "LEFT";
-    Direction["Right"] = "RIGHT";
+    Direction["Up"] = "Su";
+    Direction["Down"] = "Gi\u00F9";
+    Direction["Left"] = "Sinistra";
+    Direction["Right"] = "Destra";
 })(Direction || (Direction = {}));
 var HeterogeneousEnum;
 (function (HeterogeneousEnum) {
@@ -24,4 +24,12 @@ let enumeration = Direction.Down;
 let heterogeneous = HeterogeneousEnum.Yes;
 console.log(enumeration);
 console.log(heterogeneous);
+var prodotto;
+(function (prodotto) {
+    prodotto[prodotto["prezzo"] = 1] = "prezzo";
+    prodotto[prodotto["modello"] = 2] = "modello";
+    prodotto[prodotto["id"] = 3] = "id";
+    prodotto[prodotto["brand"] = 4] = "brand";
+})(prodotto || (prodotto = {}));
+console.log(prodotto.modello);
 //# sourceMappingURL=enum.js.map

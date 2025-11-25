@@ -28,4 +28,12 @@ function custom(description, technology) {
     return description + ' ' + technology;
 }
 console.log(custom('development', 'typescript'));
+console.log("-----------------------");
+const ordine = {
+    prodotto: { nome: "Libro", prezzo: 15 },
+    quantita: 2
+};
+console.log(ordine);
+const somma = (x, y) => x + y;
+console.log(somma(5, 3));
 //# sourceMappingURL=custom-type.js.map

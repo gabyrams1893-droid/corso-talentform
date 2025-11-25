@@ -47,3 +47,19 @@ function custom(description: Combinable, technology: ConversionDescriptor):strin
 
 console.log(custom('development','typescript'));
 
+console.log("-----------------------")
+
+
+type Prodotto = { nome: string; prezzo: number };
+type Ordine = { prodotto: Prodotto; quantita: number };
+
+const ordine: Ordine = {
+  prodotto: { nome: "Libro", prezzo: 15 },
+  quantita: 2
+};
+console.log(ordine);
+
+type SommaFn = (a: number, b: number) => number;
+
+const somma: SommaFn = (x, y) => x + y;
+console.log(somma(5, 3));
